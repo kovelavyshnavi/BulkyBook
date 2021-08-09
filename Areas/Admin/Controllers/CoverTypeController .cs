@@ -77,7 +77,7 @@ namespace BulkyBook.Areas.Admin.Controllers
             }
             _unitOfWork.CoverType.Remove(objFromDb);
             _unitOfWork.Save();
-            return Json(new { success = true, message = "Delete Successful" });
+            return Json(new { success = true, message = "Delete Successful"});
         }
         #endregion
     }
