@@ -45,7 +45,6 @@ namespace BulkyBook.Areas.Admin.Controllers
                     Value = i.Id.ToString()
                 })
             };
-
             if(id==null)
             {
                 //this is for create
@@ -88,7 +87,7 @@ namespace BulkyBook.Areas.Admin.Controllers
                     {
                         files[0].CopyTo(filesStreams);
                     }
-                    productVM.Product.ImageUrl = @"\images\product" + fileName + extension;
+                    productVM.Product.ImageUrl = @"\images\products\" + fileName + extension;
                 }
 
                 else
